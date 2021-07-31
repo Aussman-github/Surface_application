@@ -10,18 +10,21 @@
 #define BACK_LEFT (7)
 #define BACK_RIGHT (8)
 
+#ifndef
+#define ENABLE_BLE (1)
+#define BLE_MSG_LENGTH (8)
+#endif
 
 /* static variables */
+void sendBleMsg(void);
 static uint32_t counter;
 static uint32_t counter2;
+static uint8_t BleMsg[] = {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF};
+static uint8_t BleMsgAdvertising[] = {0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08};
 
 
-int main(int argc, char *argv[]){
-    
-   
-     
-    
-    
+
+int main(int argc, char *argv[]){ 
     
     
     
@@ -29,4 +32,10 @@ int main(int argc, char *argv[]){
     
     
     return 0;
+}
+
+
+void sendBleMsg(void){
+
+
 }
