@@ -30,6 +30,7 @@ void Mcp_Log(char *buffer);
 
 /* UWB Session parameters negociation*/
 static uint8_t syncCode;
+static uint8_t protocolVersion;
 
 
 /* static variables */
