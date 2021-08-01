@@ -25,6 +25,9 @@
 #define BLE_MSG_PAYLOAD_LENGTH (32)
 #endif
 
+#define INITIATOR (1)
+#define RESPONDER (0)
+
 /* Function prototypes */
 void Mcp_Log(char *buffer);
 
