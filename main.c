@@ -10,6 +10,8 @@
 #define BACK_LEFT (7)
 #define BACK_RIGHT (8)
 
+#define LOCATION_ENGINE (1)
+
 #ifndef
 #define ENABLE_BLE (1)
 #define BLE_MSG_LENGTH (8)
