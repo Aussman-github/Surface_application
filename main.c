@@ -35,7 +35,7 @@ void Mcp_Log(char *buffer);
 static uint8_t syncCode;
 static uint8_t protocolVersion;
 static uint8_t UwbChannel;
-
+static uint8_t radioconfigs;
 
 /* static variables */
 void sendBleMsg(void);
