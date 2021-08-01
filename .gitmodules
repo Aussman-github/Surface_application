@@ -1,3 +1,6 @@
 [submodule "spi_driver"]
 	path = spi_driver
 	url = ./spi_driver
+[submodule "uart_driver"]
+	path = uart_driver
+	url = ./uart_driver
