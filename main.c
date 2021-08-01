@@ -1,3 +1,10 @@
+/* 
+    main.c file
+    author: Aussman IDDIR
+    Copyright
+
+*/
+
 #include <stdio.h>
 #include <stdint.h>
 
