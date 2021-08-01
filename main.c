@@ -16,7 +16,7 @@
 #endif
 
 /* Function prototypes */
-void Mcp_Log();
+void Mcp_Log(char *buffer);
 
 
 /* static variables */
@@ -39,7 +39,7 @@ int main(int argc, char *argv[]){
 }
 
 
-void sendBleMsg(void){
+void sendBleMsg(char *buffer){
 
 
 }
