@@ -15,6 +15,7 @@
 #ifndef
 #define ENABLE_BLE (1)
 #define BLE_MSG_LENGTH (8)
+#define BLE_MSG_PAYLOAD_LENGTH (32)
 #endif
 
 /* Function prototypes */

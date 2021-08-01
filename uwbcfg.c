@@ -1,8 +1,11 @@
 /*	Ultra wide band configuration
  *
  * Author: Aussman IDDIR
-
+   Copyright
 */
+
+#define BLE_FREQUENCY (2.4)
+
 
 #define CHANNEL_DEFAULT (5)
 
