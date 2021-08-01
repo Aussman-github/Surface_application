@@ -28,6 +28,9 @@
 /* Function prototypes */
 void Mcp_Log(char *buffer);
 
+/* UWB Session parameters negociation*/
+static uint8_t syncCode;
+
 
 /* static variables */
 void sendBleMsg(void);
