@@ -15,6 +15,10 @@
 #define BLE_MSG_LENGTH (8)
 #endif
 
+/* Function prototypes */
+void Mcp_Log();
+
+
 /* static variables */
 void sendBleMsg(void);
 static uint32_t counter;
@@ -36,6 +40,12 @@ int main(int argc, char *argv[]){
 
 
 void sendBleMsg(void){
+
+
+}
+
+
+void Mcp_Log(){
 
 
 }
