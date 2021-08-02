@@ -21,6 +21,11 @@
 #define DISCOVERABLE_DEVICE (1)
 
 
+#define BMW_ONLY (1)
+#define DS5_ONLY (0)
+#define XTRAIL (0)
+
+
 #ifndef
 #define ENABLE_BLE (1)
 #define BLE_MSG_LENGTH (8)
