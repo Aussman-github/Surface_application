@@ -5,7 +5,7 @@
 */
 
 #define BLE_FREQUENCY (2.4)
-
+#define PROTOCOL_VERSION (0x100)
 
 #define CHANNEL_DEFAULT (5)
 
