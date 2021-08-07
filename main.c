@@ -45,6 +45,16 @@ typedef struct {
     uint8_t keyfobPower;
 
 }keyfobConfiguration;
+
+typedef struct {
+    uint8_t cfg15;
+
+}strUwbCfg_t;
+
+
+
+
+
 #ifndef
 #define ENABLE_BLE (1)
 #define BLE_MSG_LENGTH (8)
