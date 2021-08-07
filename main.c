@@ -56,7 +56,9 @@ typedef struct {
 
 }strUwbCfg_t;
 
-
+void increment(uint32_t *x){
+    *x += 1;
+}
 
 
 
