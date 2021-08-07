@@ -19,13 +19,9 @@
 
 #define LOCATION_ENGINE (1)
 #define DISCOVERABLE_DEVICE (1)
-
 #define BMW_ONLY (1)
 #define DS5_ONLY (0)
-#define XTRAIL (0)
-
-
-#define FRONT_NORELOCK (9)
+#define XTRAIL (0)#define FRONT_NORELOCK (9)
 
 typedef struct {
     uint8_t engine3;
@@ -45,8 +41,7 @@ typedef struct {
     uint8_t keyfobNumber;
     uint8_t keyfobPower;
 
-}keyfobConfiguration;
-#ifndef
+}keyfobConfiguration;#ifndef
 #define ENABLE_BLE (1)
 #define BLE_MSG_LENGTH (8)
 #define BLE_MSG_PAYLOAD_LENGTH (32)
