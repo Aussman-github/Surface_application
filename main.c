@@ -20,7 +20,6 @@
 #define LOCATION_ENGINE (1)
 #define DISCOVERABLE_DEVICE (1)
 
-
 #define BMW_ONLY (1)
 #define DS5_ONLY (0)
 #define XTRAIL (0)
@@ -47,9 +46,6 @@ typedef struct {
     uint8_t keyfobPower;
 
 }keyfobConfiguration;
-
-
-
 #ifndef
 #define ENABLE_BLE (1)
 #define BLE_MSG_LENGTH (8)
