@@ -22,6 +22,8 @@
 #define BMW_ONLY (1)
 #define DS5_ONLY (0)
 #define XTRAIL (0)#define FRONT_NORELOCK (9)
+#define AUDI (0)
+
 
 typedef struct {
     uint8_t engine3;
