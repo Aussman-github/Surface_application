@@ -18,6 +18,8 @@
 #define BACK_RIGHT (8)
 
 #define LOCATION_ENGINE (1)
+#define DISCOVERABLE_DEVICE (1)
+
 
 #ifndef
 #define ENABLE_BLE (1)
