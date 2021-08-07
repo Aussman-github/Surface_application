@@ -26,6 +26,30 @@
 #define XTRAIL (0)
 
 
+#define FRONT_NORELOCK (9)
+
+typedef struct {
+    uint8_t engine3;
+    uint8_t engine3_2;
+
+}strlocationEngine_t;
+
+
+typedef struct {
+    uint8_t anchorNumber;
+    uint8_t anchorPower;
+
+}anchorconfiguration;
+
+
+typedef struct {
+    uint8_t keyfobNumber;
+    uint8_t keyfobPower;
+
+}keyfobConfiguration;
+
+
+
 #ifndef
 #define ENABLE_BLE (1)
 #define BLE_MSG_LENGTH (8)
