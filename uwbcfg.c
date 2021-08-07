@@ -8,6 +8,7 @@
 #define PROTOCOL_VERSION (0x100)
 #define DERIVATION (1)
 #define INTERFACE_BOX_CANID (0XA1A)
+#define HUB_CANID (0x11)
 #define CHANNEL_DEFAULT (5)
 
 
