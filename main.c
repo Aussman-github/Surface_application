@@ -29,6 +29,8 @@
 
 #define INITIATOR (1)
 #define RESPONDER (0)
+#define NUMBER_OF_ANCHORS (10)
+
 
 /* Function prototypes */
 void Mcp_Log(char *buffer);
@@ -48,6 +50,7 @@ static uint8_t BleMsgAdvertising[] = {0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 
 static uint8_t BleMsgAdvertising2[] = {0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08}
 static char BLEDeviceName[]= {"PAAK-Hub"};
 static char BLEDeviceName[]= {"PAAK-Hub2"};
+
 
 int main(int argc, char *argv[]){ 
     
