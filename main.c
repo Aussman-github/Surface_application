@@ -26,6 +26,11 @@
 #define AUDI (0)
 #define VOLVO (0)
 
+
+uint64_t pow(uint32_t x){
+    return x*x;
+}
+
 typedef struct {
     uint8_t engine3;
     uint8_t engine3_2;
