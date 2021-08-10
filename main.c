@@ -25,6 +25,7 @@
 #define FRONT_NORELOCK (9)
 #define AUDI (0)
 #define VOLVO (0)
+#define TESLA (0)
 
 #define increment(x) 
 
