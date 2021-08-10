@@ -26,6 +26,10 @@
 #define AUDI (0)
 #define VOLVO (0)
 
+#define increment(x) 
+
+
+void vidIncrement(uint32_t *number) { *number++ };
 
 uint64_t pow(uint32_t x){
     return x*x;
