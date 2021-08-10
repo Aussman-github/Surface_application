@@ -10,6 +10,8 @@
 #define INTERFACE_BOX_CANID (0XA1A)
 #define HUB_CANID (0x11)
 #define CHANNEL_DEFAULT (5)
+#define CHANNEL_ASIA (9)
+
 #define dbgCheck(x) DEV_ASSERT(x)
 
 
@@ -20,7 +22,8 @@ void setChannel(uint8_t channel){
 	
 void setUwbTxPower(uint8_t TxPower){
 
-}void resetChannel(uint8_t channel){
+}
+void resetChannel(uint8_t channel){
 
     
 }
