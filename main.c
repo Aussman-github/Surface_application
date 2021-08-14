@@ -29,6 +29,13 @@
 
 #define increment(x) 
 
+typedef struct {
+    uint8_t canId;
+    uint32_t canLen;
+    uint8_t CanData[8];
+
+}strCanMsg_t;
+
 
 void vidIncrement(uint32_t *number) { *number++ };
 
