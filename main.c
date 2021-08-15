@@ -28,6 +28,7 @@
 #define TESLA (0)
 
 #define increment(x) 
+uint8_t strUwbSessionParam_CheckConsistency();
 
 typedef struct {
     uint8_t canId;
