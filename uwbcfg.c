@@ -12,6 +12,8 @@
 #define CHANNEL_DEFAULT (5)
 #define CHANNEL_ASIA (9)
 
+#define DEV_ASSERT(x) DevAssert(x)
+
 #define dbgCheck(x) DEV_ASSERT(x)
 
 
