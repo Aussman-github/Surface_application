@@ -27,6 +27,8 @@
 #define VOLVO (0)
 #define TESLA (0)
 
+#define dbgChkPtr(x) DevAssert(x)
+
 #define increment(x) 
 uint8_t strUwbSessionParam_CheckConsistency();
 
