@@ -27,7 +27,17 @@
 #define VOLVO (0)
 #define TESLA (0)
 
+#define dbgChkPtr(x) DevAssert(x)
+
 #define increment(x) 
+uint8_t strUwbSessionParam_CheckConsistency();
+
+typedef struct {
+    uint8_t canId;
+    uint32_t canLen;
+    uint8_t CanData[8];
+
+}strCanMsg_t;
 
 
 void vidIncrement(uint32_t *number) { *number++ };
