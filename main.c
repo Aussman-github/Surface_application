@@ -116,7 +116,7 @@ typedef struct{
 
 
 typedef struct{
-    uint8_t nbOfAnchors;
+    uint64_t nbOfAnchors;
 
 }tstr_DS5_cfg;
 
