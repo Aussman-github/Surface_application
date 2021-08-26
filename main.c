@@ -113,6 +113,12 @@ typedef struct{
 
 }tstr_bmw_cfg;
 
+
+typedef struct{
+    uint8_t nbOfAnchors;
+
+}tstr_DS5_cfg;
+
 int main(int argc, char *argv[]){ 
     
     
