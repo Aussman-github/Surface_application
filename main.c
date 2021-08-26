@@ -107,6 +107,7 @@ static uint8_t BleMsgAdvertising2[] = {0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07,
 static char BLEDeviceName[]= {"PAAK-Hub"};
 static char BLEDeviceName[]= {"PAAK-Hub2"};
 
+void runLocationEngine(void);
 
 int main(int argc, char *argv[]){ 
     
