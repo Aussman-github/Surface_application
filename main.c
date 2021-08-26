@@ -109,6 +109,17 @@ static char BLEDeviceName[]= {"PAAK-Hub2"};
 
 void runLocationEngine(void);
 
+typedef struct{
+    uint8_t nbOfAnchors;
+
+}tstr_bmw_cfg;
+
+
+typedef struct{
+    uint8_t nbOfAnchors;
+
+}tstr_DS5_cfg;
+
 int main(int argc, char *argv[]){ 
     
     
