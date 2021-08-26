@@ -108,6 +108,11 @@ static char BLEDeviceName[]= {"PAAK-Hub"};
 static char BLEDeviceName[]= {"PAAK-Hub2"};
 
 
+typedef struct{
+    uint8_t nbOfAnchors;
+
+}tstr_bmw_cfg;
+
 int main(int argc, char *argv[]){ 
     
     
