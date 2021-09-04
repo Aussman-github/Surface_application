@@ -17,7 +17,7 @@
 #define BACK_LEFT (7)
 #define BACK_RIGHT (8)
 
-#define LOCATION_ENGINE (1)
+#define LOCATION_ENGINE_v2 (1)
 #define DISCOVERABLE_DEVICE (1)
 #define BMW_ONLY (1)
 #define DS5_ONLY (0)
