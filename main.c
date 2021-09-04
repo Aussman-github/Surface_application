@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <stdint.h>
 
-#define FRONT_ZONE (1)
+#define FRONTNORELOCK_ZONE (1)
 #define LEFT_ZONE (2)
 #define BACK_ZONE (3)
 #define RIGHT_ZONE (4)
@@ -17,7 +17,7 @@
 #define BACK_LEFT (7)
 #define BACK_RIGHT (8)
 
-#define LOCATION_ENGINE (1)
+#define LOCATION_ENGINE_V1 (1)
 #define DISCOVERABLE_DEVICE (1)
 #define BMW_ONLY (1)
 #define DS5_ONLY (0)
