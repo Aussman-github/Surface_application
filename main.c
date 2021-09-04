@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <stdint.h>
 
-#define FRONT_ZONE (1)
+#define FRONTNORELOCK_ZONE (1)
 #define LEFT_ZONE (2)
 #define BACK_ZONE (3)
 #define RIGHT_ZONE (4)
