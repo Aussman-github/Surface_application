@@ -76,6 +76,11 @@ void increment(uint32_t *x){
 }
 
 
+typedef struct {
+    uint8_t id;
+
+}strl2cap_t;
+
 
 #ifndef
 #define ENABLE_BLE (1)
