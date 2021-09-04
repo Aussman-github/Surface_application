@@ -21,7 +21,7 @@
 #define DISCOVERABLE_DEVICE (1)
 #define BMW_ONLY (1)
 #define DS5_ONLY (0)
-#define XTRAIL (0)
+#define NISSAN_XTRAIL (0)
 #define FRONT_NORELOCK (9)
 #define AUDI (0)
 #define VOLVO (0)
