@@ -7,7 +7,7 @@
 #define BLE_FREQUENCY (2.4)
 #define PROTOCOL_VERSION (0x100)
 #define DERIVATION (1)
-#define INTERFACE_BOX_CANID (0XA2A)
+#define INTERFACE_BOX_CANID (0x1A1)
 #define HUB_CANID (0x11)
 #define CHANNEL_DEFAULT (5)
 #define CHANNEL_ASIA (9)
