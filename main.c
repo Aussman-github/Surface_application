@@ -85,7 +85,7 @@ void increment(uint32_t *x){
 
 #define INITIATOR (1)
 #define RESPONDER (0)
-#define NUMBER_OF_ANCHORS (10)
+#define NUMBER_OF_ANCHORS (14)
 
 
 /* Function prototypes */
