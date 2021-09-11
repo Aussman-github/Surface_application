@@ -76,6 +76,10 @@ void increment(uint32_t *x){
 }
 
 
+uint32_t compute(uint32_t nb_a, uint32_t nb_b, uint32_t (*ptrfct2)(uint32_t, uint32_t)){
+    ptrfct2(a,b);
+}
+
 
 #ifndef
 #define ENABLE_BLE (1)
