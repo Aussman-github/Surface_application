@@ -121,7 +121,9 @@ typedef struct{
 }tstr_DS5_cfg;
 
 int main(int argc, char *argv[]){ 
-    uint32_t (*ptrfct2)(uint32_t, uint32_t);
+uint32_t (*ptrfct)(uint32_t, uint32_t);
+uint32_t (*ptrfct2)(uint32_t, uint32_t);
+
     
     
     
