@@ -8,6 +8,7 @@
 #include <stdio.h>
 #include <stdint.h>
 
+
 #define FRONTNORELOCK_ZONE (1)
 #define LEFT_ZONE (2)
 #define BACK_ZONE (3)
@@ -29,7 +30,6 @@
 
 #define dbgChkPtr(x) DevAssert(x)
 
-#define increment(x) 
 uint8_t strUwbSessionParam_CheckConsistency();
 
 typedef struct {
@@ -40,10 +40,10 @@ typedef struct {
 }strCanMsg_t;
 
 
-void vidIncrement(uint32_t *number) { *number++ };
+void vidIncrement(uint32_t *number) { *number++; }
 
-uint64_t pow(uint32_t x){
-    return x*x;
+uint64_t pow2(uint64_t param1){
+    return param1*param1;
 }
 
 typedef struct {
@@ -72,17 +72,18 @@ typedef struct {
 
 }strUwbCfg_t;
 
-void increment(uint32_t *x){
-    *x += 1;
+void increment(uint32_t *param1)
+{
+    *param1 += 1;
 }
 
 
 uint32_t compute(uint32_t nb_a, uint32_t nb_b, uint32_t (*ptrfct2)(uint32_t, uint32_t)){
-    ptrfct2(a,b);
+    ptrfct2(nb_a,nb_b);
 }
 
 
-#ifndef
+#ifndef UWB_ONLY
 #define ENABLE_BLE (1)
 #define BLE_MSG_LENGTH (8)
 #define BLE_MSG_PAYLOAD_LENGTH (32)
@@ -108,9 +109,9 @@ static uint32_t counter;
 static uint32_t counter2;
 static uint8_t BleMsg[] = {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF};
 static uint8_t BleMsgAdvertising[] = {0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08};
-static uint8_t BleMsgAdvertising2[] = {0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08}
+static uint8_t BleMsgAdvertising2[] = {0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08};
 static char BLEDeviceName[]= {"PAAK-Hub"};
-static char BLEDeviceName[]= {"PAAK-Hub2"};
+static char BLEDeviceName2[]= {"PAAK-Hub2"};
 
 void runLocationEngine(void);
 
@@ -125,11 +126,41 @@ typedef struct{
 
 }tstr_DS5_cfg;
 
-int main(int argc, char *argv[]){ 
-uint32_t (*ptrfct)(uint32_t, uint32_t);
-uint32_t (*ptrfct2)(uint32_t, uint32_t);
 
-    
+typedef float(*pOp_t)(int);
+
+/* Define a calculate function that takes in two arguments, an integer and an operation (callback function)
+ * The function should returns the result of the operation on the integer 
+ */
+
+
+/* All the callback functions have the same signature as the function pointer */
+float cb_square(int num) {
+	return num * num;
+}
+
+float cb_cube(int num) {
+	return num * num*num;
+}
+
+float cb_square_root(int num) {
+	return sqrt(num);
+}
+
+float calculate(int num, pOp_t op) {
+	return op(num);
+}
+
+
+
+
+
+
+int main(int argc, char *argv[]){ 
+	uint32_t (*ptrfct)(uint32_t, uint32_t);
+	uint32_t (*ptrfct2)(uint32_t, uint32_t);
+
+	printf("Square of 5 is %f\n", calculate(5, cb_squre));
     
     
     
@@ -137,14 +168,3 @@ uint32_t (*ptrfct2)(uint32_t, uint32_t);
     return 0;
 }
 
-
-void sendBleMsg(char *buffer){
-
-
-}
-
-
-void Mcp_Log(){
-
-
-}

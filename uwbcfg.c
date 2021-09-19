@@ -3,6 +3,7 @@
  * Author: Aussman IDDIR
    Copyright
 */
+#include <stdint.h>
 
 #define BLE_FREQUENCY (2.4)
 #define PROTOCOL_VERSION (0x100)
