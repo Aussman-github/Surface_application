@@ -56,6 +56,7 @@ typedef struct {
 typedef struct {
     uint8_t anchorNumber;
     uint8_t anchorPower;
+	uint8_t anchorId;
 
 }anchorconfiguration;
 
