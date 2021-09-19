@@ -156,10 +156,10 @@ float calculate(int num, pOp_t op) {
 
 
 int main(int argc, char *argv[]){ 
-uint32_t (*ptrfct)(uint32_t, uint32_t);
-uint32_t (*ptrfct2)(uint32_t, uint32_t);
+	uint32_t (*ptrfct)(uint32_t, uint32_t);
+	uint32_t (*ptrfct2)(uint32_t, uint32_t);
 
-    
+	printf("Square of 5 is %f\n", calculate(5, cb_squre));
     
     
     
