@@ -119,6 +119,8 @@ static uint8_t BleMsgAdvertising[] = {0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 
 static uint8_t BleMsgAdvertising2[] = {0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08};
 static char BLEDeviceName[]= {"PAAK-Hub"};
 static char BLEDeviceName2[]= {"PAAK-Hub2"};
+char *date = __DATE__;
+char *time = __TIME__;
 
 void runLocationEngine(void);
 
