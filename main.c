@@ -133,6 +133,23 @@ typedef float(*pOp_t)(int);
  */
 
 
+/* All the callback functions have the same signature as the function pointer */
+float cb_square(int num) {
+	return num * num;
+}
+
+float cb_cube(int num) {
+	return num * num*num;
+}
+
+float cb_square_root(int num) {
+	return sqrt(num);
+}
+
+float calculate(int num, pOp_t op) {
+	return op(num);
+}
+
 
 
 
