@@ -33,6 +33,12 @@
 
 uint8_t strUwbSessionParam_CheckConsistency();
 
+#ifdef CHECK_CONSISTENCY
+static void checkConsistency(void);
+
+#endif
+
+
 typedef struct {
     uint8_t canId;
     uint32_t canLen;
