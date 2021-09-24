@@ -8,6 +8,7 @@
 #include <stdio.h>
 #include <stdint.h>
 #include <stdint.h>
+#include <stdbool.h>
 
 #define FRONTNORELOCK_ZONE (1)
 #define LEFT_ZONE (2)
