@@ -30,7 +30,9 @@
 #define VOLVO (0)
 #define TESLA (0)
 
+#ifdef UWB_ONLY
 #define dbgChkPtr(x) DevAssert(x)
+#endif
 
 uint8_t strUwbSessionParam_CheckConsistency();
 
