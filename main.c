@@ -44,7 +44,29 @@ static void checkConsistency(void);
 typedef struct {
 	char c;
 	short int b;
-}tstrData1;
+}tstrData1;typedef struct {
+	char d;
+}tstrData2;
+
+typedef struct {
+	char e;
+
+}tstrData3;
+
+typedef struct {
+	char e;
+
+}tstrData4;
+
+typedef struct {
+	char f;
+
+}tstrData5;
+
+typedef struct {
+	char g;
+
+}tstrData6;
 
 typedef struct {
     uint16_t canId;
