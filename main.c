@@ -70,6 +70,10 @@ typedef struct {
 
 }anchorconfiguration;
 
+typedef struct {
+	uint8_t keyfobTxPower;
+}keyfobconfiguration;
+
 
 typedef struct {
     uint8_t keyfobNumber;
