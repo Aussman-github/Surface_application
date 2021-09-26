@@ -43,7 +43,7 @@ static void checkConsistency(void);
 
 
 typedef struct {
-    uint8_t canId;
+    uint16_t canId;
     uint32_t canLen;
     uint8_t CanData[8];
 
