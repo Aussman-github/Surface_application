@@ -142,6 +142,11 @@ typedef struct{
 
 }tstr_DS5_cfg;
 
+typedef struct {
+	uint8_t nbOfAnchors,
+
+
+}tstr_XTRAIL_cfg;
 
 typedef float(*pOp_t)(int);
 
