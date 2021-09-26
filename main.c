@@ -176,6 +176,20 @@ int main(int argc, char *argv[]){
 	uint32_t (*ptrfct)(uint32_t, uint32_t);
 	uint32_t (*ptrfct2)(uint32_t, uint32_t);
 
+	uint32_t n, i, *ptr, sum = 0;
+
+	printf("Enter number of elements: ");
+	scanf("%d", &n);
+
+	ptr = (uint32_t)malloc(n * sizeof(uint32_t));
+
+	// If memory cannot be allocated
+	if (ptr == NULL) {
+		printf("Memory not allocated");
+		exit(0);
+	}
+
+
 	printf("Square of 5 is %f\n", calculate(5, cb_squre));
     
     
