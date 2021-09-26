@@ -38,9 +38,13 @@ uint8_t strUwbSessionParam_CheckConsistency();
 
 #ifdef CHECK_CONSISTENCY
 static void checkConsistency(void);
-
 #endif
 
+/* test of memory alignment*/
+typedef struct {
+	char c;
+	short int b;
+}tstrData1;
 
 typedef struct {
     uint16_t canId;
