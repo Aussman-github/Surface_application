@@ -189,6 +189,16 @@ int main(int argc, char *argv[]){
 		exit(0);
 	}
 
+	printf("Enter elements: ");
+	for (i = 0; i < n; ++i) {
+		scanf("%d", ptr + i);
+		sum += *(ptr + i);
+	}
+	
+	printf("Sum = %d, sum");
+
+	// Deallocating the memory
+	free(ptr);
 
 	printf("Square of 5 is %f\n", calculate(5, cb_squre));
     
