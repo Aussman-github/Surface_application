@@ -184,7 +184,7 @@ float calculate(int num, pOp_t op) {
 int main(int argc, char *argv[]){ 
 	uint32_t (*ptrfct)(uint32_t, uint32_t);
 	uint32_t (*ptrfct2)(uint32_t, uint32_t);
-
+	char *deviceType = NULL;
 	uint32_t n, i, *ptr, sum = 0;
 
 	printf("Enter number of elements: ");
