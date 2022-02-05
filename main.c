@@ -170,9 +170,7 @@ typedef struct{
 }tstr_DS5_cfg;
 
 typedef struct {
-	uint8_t nbOfAnchors,
-
-
+	uint8_t nbOfAnchors;
 }tstr_XTRAIL_cfg;
 
 typedef float(*pOp_t)(int);
@@ -213,7 +211,7 @@ int main(int argc, char *argv[]){
 	printf("Enter number of elements: ");
 	scanf("%d", &n);
 
-	ptr = (uint32_t)malloc(n * sizeof(uint32_t));
+	ptr = (uint32_t*)malloc(n * sizeof(uint32_t));
 
 	// If memory cannot be allocated
 	if (ptr == NULL) {
@@ -230,11 +228,7 @@ int main(int argc, char *argv[]){
 	printf("Sum = %d, sum");
 
 	// Deallocating the memory
-	free(ptr);
-
-	printf("Square of 5 is %f\n", calculate(5, cb_squre));
-    
-    
+	free(ptr);   
     
     
     return 0;
