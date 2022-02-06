@@ -9,6 +9,7 @@
 #include <stdint.h>
 #include <stdint.h>
 #include <stdbool.h>
+#include <stdlib.h>
 #include <math.h>
 
 #define FRONTNORELOCK_ZONE (1)
