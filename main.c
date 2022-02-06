@@ -1,9 +1,9 @@
-/* 
-    main.c file
-    author: Aussman IDDIR
-    Copyright
+//*******************************************************
+Name ......... : main.c
+Author ...... : Aussman IDDIR
+Version ..... : V1.2 2022
+* ******************************************************* /
 
-*/
 
 #include <stdio.h>
 #include <stdint.h>
