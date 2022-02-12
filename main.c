@@ -42,6 +42,13 @@ Version ..... : V1.2 2022
 
 uint8_t strUwbSessionParam_CheckConsistency();
 
+typedef struct {
+    float fAnchorDistance;
+    float fAnchorFirstPathPower;
+    float fAnchorOverallRxPower;
+}tstrAnchorinformation;
+
+
 #ifdef CHECK_CONSISTENCY
 static void checkConsistency(void);
 #endif
@@ -50,7 +57,9 @@ static void checkConsistency(void);
 typedef struct {
 	char c;
 	short int b;
-}tstrData1;typedef struct {
+}tstrData1;
+
+typedef struct {
 	char d;
 }tstrData2;
 
