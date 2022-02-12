@@ -31,6 +31,7 @@ Version ..... : V1.2 2022
 #define VOLVO (0)
 #define TESLA (0)
 
+#define MAX_ANCHOR_NUMBER 10
 #define CCC_L2CAP (1)
 
 #define MAX(a,b) (a>b)?a:b
@@ -48,6 +49,8 @@ typedef struct {
     float fAnchorOverallRxPower;
 }tstrAnchorinformation;
 
+
+tstrAnchorinformation pSelfAnchorsContext[MAX_ANCHOR_NUMBER];
 
 #ifdef CHECK_CONSISTENCY
 static void checkConsistency(void);
