@@ -11,6 +11,7 @@ Version ..... : V1.2 2022
 #include <stdbool.h>
 #include <stdlib.h>
 #include <math.h>
+#include <string.h>
 
 #define FRONTNORELOCK_ZONE (1)
 #define LEFT_ZONE (2)
@@ -90,7 +91,6 @@ typedef struct {
     uint16_t canId;
     uint32_t canLen;
     uint8_t CanData[8];
-
 }strCanMsg_t;
 
 
@@ -224,6 +224,7 @@ int main(int argc, char *argv[]){
 	uint32_t (*ptrfct2)(uint32_t, uint32_t);
 	char *deviceType = NULL;
 	uint32_t n, i, *ptr, sum = 0;
+    uint8_t au8LocalBuffer[250];
 
 	printf("Enter number of elements: ");
 	scanf("%d", &n);
@@ -242,7 +243,13 @@ int main(int argc, char *argv[]){
 		sum += *(ptr + i);
 	}
 	
-	printf("Sum = %d, sum");
+	printf("Sum = %d\r\n", sum);
+
+    memset(au8LocalBuffer, 0, sizeof(au8LocalBuffer));
+    sprintf(au8LocalBuffer, "Exit Program\r\n");
+    printf(au8LocalBuffer);
+
+
 
 	// Deallocating the memory
 	free(ptr);   
