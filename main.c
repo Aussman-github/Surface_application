@@ -31,6 +31,8 @@ Version ..... : V1.2 2022
 #define VOLVO (0)
 #define TESLA (0)
 
+#define CCC_L2CAP (1)
+
 #define MAX(a,b) (a>b)?a:b
 #define MIN(a,b) (a<b)?a:b
 
